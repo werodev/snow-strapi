@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "snows",
+  "info": {
+    "singularName": "snow",
+    "pluralName": "snows",
+    "displayName": "snow"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "news",
+        "culture",
+        "traffic"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
